@@ -1,0 +1,171 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top">
+        <a class="navbar-brand" href="#"
+            ><img style="max-width: 40px" src="assets/icons/logo.jpg"
+        /></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link mx-4" href="#sobre">Sobre</a>
+                <!-- <a class="nav-item nav-link mx-4" href="#especialidades"
+                    >Especialidades</a
+                > -->
+                <a class="nav-item nav-link mx-4" href="#atendimento"
+                    >Atendimento</a
+                >
+                <a class="nav-item nav-link mx-4" href="#consultorio"
+                    >Consultório</a
+                >
+                <a class="nav-item nav-link mx-4" href="#contato"
+                    >Agente sua consulta</a
+                >
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container mb-5">
+    <!-- SECTION PRINCIPAL -->
+    <section class="row">
+        <div class="col-md-6 text-center align-self-center">
+            <div class="bg-title">
+                <h1 class="title">Gabriel Rocha</h1>
+                <h2 class="subtitle" style="color: var(--default-color)">
+                    Fisioterapeuta
+                </h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img
+                class="rounded img-landing-size"
+                src="assets/images/rocha_1.jpg"
+            />
+        </div>
+    </section>
+    <!-- SECTION SOBRE -->
+    <section class="row mt-5" id="sobre">
+        <h1 class="title-section">Sobre</h1>
+        <div class="col-12 mt-4 align-self-center p-large">
+            <p>
+                Fisioterapeuta formado pela PUC-PR especializado em
+                <b class="text-default">Gerontologia</b> pela PUC-PR e mestrando
+                em tecnologia da Saúde pela PUC-PR
+            </p>
+        </div>
+    </section>
+    <!-- SECTION ATENDIMENTO -->
+    <section class="row mt-5" id="atendimento">
+        <h1 class="title-section">Atendimento</h1>
+        <div class="row mt-4 p-large">
+            <div class="col-md-4">
+                <img
+                    class="rounded img-size"
+                    src="assets/images/atendimento_1.jpg"
+                />
+            </div>
+            <div class="col-md-8 align-self-center">
+                <p>
+                    O
+                    <b class="text-default"
+                        >Consultório Gabriel Rocha Fisioterapia</b
+                    >
+                    atende pacientes na modalidade de fisioterapia geral e
+                    também com atendimento
+                    <b class="text-default">especializado em idosos</b>.
+                </p>
+                <p>
+                    Todos os atendimentos são realizados de forma individual, no
+                    período de 50 minutos a 1 hora.
+                </p>
+                <p>
+                    Marque já seu atendimento pelo whatsapp
+                    <b class="text-default">(41) 99641-9951.</b>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION CONSULTORIO -->
+    <section class="row mt-5" id="consultorio">
+        <h1 class="title-section">Consultório</h1>
+        <div class="row mt-4">
+            <div class="col-12">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let slide of fotos">
+                        <ng-template carouselSlide>
+                            <img class="rounded img-size" [src]="slide" />
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION CONTATO -->
+    <section class="row mt-5 row-max-height" id="contato">
+        <h1 class="title-section">Agende sua consulta</h1>
+        <div class="row mt-4 p-large">
+            <div class="col-md-6 align-self-center">
+                <span
+                    ><img src="assets/icons/whatsapp.png" /> (41)
+                    99641-9951</span
+                >
+                <br />
+                <a
+                    class="cursor-pointer text-decoration-none"
+                    href="https://www.instagram.com/gabriel_rocha1/"
+                    target="_blank"
+                    ><img src="assets/icons/instagram.png" /> gabriel_rocha1
+                </a>
+                <br />
+                <br />
+                <span><b class="text-default">CREFITO:</b> 312584-F</span>
+                <br />
+                <br />
+                <span
+                    ><b class="text-default">Endereço:</b> R. Prof. Ulisses
+                    Vieira, 864 - Vila Izabel, Curitiba - PR, 80320-090</span
+                >
+                <br />
+            </div>
+            <div class="col-md-6 text-center align-self-center">
+                <div
+                    style="
+                        text-decoration: none;
+                        overflow: hidden;
+                        max-width: 100%;
+                        width: 500px;
+                        height: 500px;
+                    "
+                >
+                    <div
+                        id="gmap-canvas"
+                        style="height: 100%; width: 100%; max-width: 100%"
+                    >
+                        <iframe
+                            style="height: 100%; width: 100%; border: 0"
+                            frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Rua+Professor+Ulisses+Vieira,+864+-+Vila+Izabel,+Curitiba+-+PR,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        ></iframe>
+                    </div>
+                    <style>
+                        #gmap-canvas img.text-marker {
+                            max-width: none !important;
+                            background: none !important;
+                        }
+                        img {
+                            max-width: none;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

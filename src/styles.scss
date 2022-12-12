@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("assets/fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+    font-family: "Ubuntu";
+}
+
+:root {
+    --default-color: #688f7d;
+    --default-color-alpha: #688f7d41;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.text-default {
+    color: var(--default-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
