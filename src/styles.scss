@@ -25,3 +25,13 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.desktop-only-flex {
+    display: none;
+}
+
+@media (min-width: 772px) {
+    .desktop-only-flex {
+        display: flex;
+    }
+}
