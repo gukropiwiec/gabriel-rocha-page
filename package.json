@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/gabriel-rocha-page/"
+    "deploy": "ng deploy --cname=fisioterapeutarocha.com.br"
   },
   "private": true,
   "dependencies": {
